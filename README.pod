@@ -1,0 +1,35 @@
+=encoding utf8
+
+=head1 libxml2-2.9.4 reader/xsd regression
+
+=head2 Links
+
+=over 4
+
+=item * Original bug for XML::LibXML
+
+L<https://rt.cpan.org/Ticket/Display.html?id=114638>
+
+=item * bugzilla.gnome.org bug
+
+L<https://bugzilla.gnome.org/show_bug.cgi?id=766834>
+
+=back
+
+=head2 How to reproduce
+
+Compile and link C<reader.c> against libxml2 and do:
+
+    ./a.out 2>&1 | less
+
+With 2.9.4 some warnings/errors will be seen.
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2016 by Shlomi Fish.
+
+This is free software, licensed under:
+
+  The MIT (X11) License
+
+=cut
